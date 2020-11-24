@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>BUDGET APP</h1></header>
+    <div class="main-container">
+      <div class="input">
+        <div class="budget-container">
+          <p class="input-description">Enter Your Budget:</p>
+          <input type="text" class="budget-input" id="budget-test" />
+          <button class="button" id="btn-calculate">Calculate</button>
+        </div>
+        <div class="expense-container">
+          <p class="input-description">Enter Your Expense:</p>
+          <input type="text" id="expense-input" class="budget-input" />
+          <p class="input-description">Enter Amount:</p>
+          <input type="text" id="amount-input" class="budget-input" />
+          <button class="button" id="btn-expense">Add Expense</button>
+        </div>
+      </div>
+      <div class="reset-button" id="reset">
+        <button class="reset-btn">RESET</button>
+      </div>
+      <div class="output">
+        <div class="updated-budget">
+          <div class="budget">
+            <h3>BUDGET</h3>
+            <p id="budget-amount">$</p>
+          </div>
+          <div class="expenses">
+            <h3>EXPENSES</h3>
+            <p id="expense-amount">$</p>
+          </div>
+          <div class="balance">
+            <h3>BALANCE</h3>
+            <p id="balance-amount">$</p>
+          </div>
+        </div>
+        <div class="expense-list">
+          <div class="expense-description"><h3>DESCRIPTION</h3></div>
+          <div class="expense-value"><h3>AMOUNT</h3></div>
+        </div>
+        <ul id="items"></ul>
+      </div>
+     
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
