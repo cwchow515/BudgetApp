@@ -1,4 +1,4 @@
-//Set variables to select elements
+//Class to create object
 
 class Expense {
   constructor(transaction, amount){
@@ -7,6 +7,7 @@ class Expense {
   }
 }
 
+//Set variables to select elements
 var calculateBtn = document.getElementById("btn-calculate");
 var expenseBtn = document.getElementById("btn-expense");
 var resetBtn = document.getElementById("reset");
@@ -15,7 +16,6 @@ var expense = document.getElementById("amount-input");
 var expenseArray = [];
 var expenseAmount = document.getElementById("expense-amount");
 var expenseType = document.getElementById("expense-input");
-
 
 // var budgetAmount = document.getElementById("budget-amount");
 
