@@ -30,7 +30,7 @@ function budgetAmount() {
 calculateBtn.addEventListener("click", budgetAmount);
 //add value from amount to expense container and push to empty array
 //  and update onclick event
-//add value from expense and amount and create new li tag, reset to zero
+
 function expenseFunction() {
   expenseArray.push(expense.value); 
   expenseAmount.innerHTML = expense.value;
@@ -57,22 +57,7 @@ function resetFunction() {
 
 resetBtn.addEventListener("click", resetFunction);
 
-//create body tag
-// function createTag() {
-//   let newElement = document.createElement("li");
-//   document.body.appendChild(newElement);
-//   expenseType.value = "";
-//   expenseAmount.value = "";
-//   expense.value = "";
-// }
-// expenseBtn.addEventListener("click", createTag);
-
 class UI {
-  // static displayExpense(){
-  //   const expense = Store.getExpense();
-
-  //   expense.forEach((expense) => UI.addExpenseToList(expense));
-  // }
 
   static addExpenseToList(newExpense) {
     const list = document.getElementById('items');
@@ -98,14 +83,7 @@ class UI {
   }
 }
 
-//document.addEventListener('DOMContentLoaded', UI.displayExpense);
-
 expenseBtn.addEventListener("click", () => {
-  // Prevent actual submit
-  //e.preventDefault();
-  
-  // Get form values
-
 
   // Validate
   if(expenseType.value === '' || expense.value === '' ) {
@@ -117,11 +95,7 @@ expenseBtn.addEventListener("click", () => {
     // Add Book to UI
     UI.addExpenseToList(newExpense);
 
-    // Add book to store
-    //Store.addBook(book);
-
-    // Show success message
-    //UI.showAlert('Book Added', 'success');
+ 
 
     // Clear fields
     UI.clearValues();
